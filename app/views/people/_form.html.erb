@@ -11,38 +11,49 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
+  <div class="person-form">
+
+    <div class="person-form-left">
+      <div class="field">
+        <%= f.label :first_name %><br>
+        <%= f.text_field :first_name %>
+      </div>
+      <div class="field">
+        <%= f.label :last_name %><br>
+        <%= f.text_field :last_name %>
+      </div>
+      <div class="field">
+        <%= f.label :email %><br>
+        <%= f.text_field :email %>
+      </div>
+      <div class="field">
+        <%= f.label :job %><br>
+        <%= f.text_field :job %>
+      </div>
+    </div> 
+
+    <div class="person-form-right">
+      <div class="field">
+        <%= f.label :gender %><br>
+        <%= f.select :gender, ["Male", "Female"] %>
+      </div>
+      <div class="field picture-url">
+        <%= f.label :picture %><br>
+        <%= f.text_field :picture %>
+      </div>
+      <div class="field">
+        <%= f.label :birthday %><br>
+        <%= f.date_select :birthday, :start_year => Time.now.year - 110, :end_year => Time.now.year %>
+      </div>
+    </div>
+
   </div>
+
   <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :job %><br>
-    <%= f.text_field :job %>
-  </div>
-  <div class="field">
-    <%= f.label :bio %><br>
-    <%= f.text_area :bio %>
-  </div>
-  <div class="field">
-    <%= f.label :gender %><br>
-    <%= f.text_field :gender %>
-  </div>
-  <div class="field">
-    <%= f.label :picture %><br>
-    <%= f.text_field :picture %>
-  </div>
-  <div class="field">
-    <%= f.label :birthday %><br>
-    <%= f.text_field :birthday %>
-  </div>
+      <%= f.label :bio %><br>
+      <%= f.text_area :bio %>
+    </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

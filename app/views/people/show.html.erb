@@ -1,44 +1,48 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @person.first_name %>
-</p>
+<div class="profile-container">
 
-<p>
-  <strong>Last name:</strong>
-  <%= @person.last_name %>
-</p>
+  <aside class="left-info text-center">
+    <div class="picture">
+      <%= image_tag(@person.picture, class: "profile_pic", alt: "profile_pic") %>
+    </div>
+    <p>
+      <strong>NAME:</strong><br>
+      <%= @person.first_name + ' ' + @person.last_name %>
+    </p>
+    <p>
+      <strong>EMAIL:</strong><br>
+      <%= @person.email %>
+    </p>
+    <p>
+      <strong>GENDER:</strong><br>
+      <%= @person.gender %>
+    </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @person.email %>
-</p>
+    <p>
+      <strong>BIRTHDAY:</strong><br>
+      <%= @person.birthday %>
+    </p>
 
-<p>
-  <strong>Job:</strong>
-  <%= @person.job %>
-</p>
+  </aside>
 
-<p>
-  <strong>Bio:</strong>
-  <%= @person.bio %>
-</p>
+  <div class="right-info">
+    <h2><%= @person.first_name + ' ' + @person.last_name %></h2>
+    <p>
+      <strong>Job:</strong>
+      <%= @person.job %>
+    </p>
+    <p>
+      <strong>Bio:</strong>
+      <%= @person.bio %>
+    </p>
+    
+  </div>
 
-<p>
-  <strong>Gender:</strong>
-  <%= @person.gender %>
-</p>
+</div>
 
-<p>
-  <strong>Picture:</strong>
-  <%= @person.picture %>
-</p>
 
-<p>
-  <strong>Birthday:</strong>
-  <%= @person.birthday %>
-</p>
-
-<%= link_to 'Edit', edit_person_path(@person) %> |
-<%= link_to 'Back', people_path %>
+<div class="profile-edit">
+  <%= link_to 'Edit', edit_person_path(@person) %> |
+  <%= link_to 'Back', people_path %>
+</div>

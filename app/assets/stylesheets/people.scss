@@ -1,3 +1,88 @@
 // Place all the styles related to the People controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+a:hover{
+			background-color: none !important;
+		}
+
+
+body{
+	.container{
+		a:hover{
+			background-color: none !important;
+		}
+
+		.profile-container{
+			margin-top: 70px;
+			max-width: 1200px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 100%;
+		    display: flex;
+
+		    .left-info{
+		    	width: 25%;
+		    	display: block;
+		    }
+
+		    .right-info{
+		    	width: 75%;
+		    	display: block;
+		    	padding: 25px;
+		    }
+		}
+
+		.profile-edit{
+			float: rigth;
+		}
+
+		.profile_pic{
+			width: 250px;
+			border-radius: 10px;
+		}
+
+		.remove_image{
+			width: 15px;
+		}
+
+		.people_table{
+			td, th{
+				padding: 10px;
+			}
+		}
+		textarea{
+			width: 792px;
+			height: 147px;
+		}
+
+		.person-form{
+			max-width: 1200px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    width: 100%;
+		    display: flex;
+			.person-form-left{
+		    	width: 30%;
+		    	display: block;
+		    }
+
+		    .person-form-right{
+		    	width: 30%;
+		    	display: block;
+		    }
+		    #person_picture{
+		    	width: 350px;
+		    }
+		}		
+	}	
+}
+
+
+a:hover{
+			background-color: none !important;
+		}
+    
