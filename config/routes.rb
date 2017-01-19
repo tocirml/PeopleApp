@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
   resources :people
+
+  require 'resque/server'
+  PeopleApp::Application.routes.draw do
+    mount Resque::Server.new, at: "/resque"
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

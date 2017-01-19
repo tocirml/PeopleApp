@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.7.1'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.13', '< 0.5'
+#background jobs
+gem 'resque'
+gem 'resque_mailer'
+# gem 'resque-scheduler', :require => 'resque/scheduler/server'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use SCSS for stylesheets

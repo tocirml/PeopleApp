@@ -3,13 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
-
-a:hover{
-			background-color: none !important;
-		}
-
-
 body{
 	.container{
 		a:hover{
@@ -54,7 +47,7 @@ body{
 
 		.people_table{
 			td, th{
-				padding: 10px;
+				padding: 5px 30px;
 			}
 		}
 		textarea{
@@ -83,9 +76,4 @@ body{
 		}		
 	}	
 }
-
-
-a:hover{
-			background-color: none !important;
-		}
     
