@@ -10,6 +10,10 @@ gem 'resque'
 gem 'resque_mailer'
 # gem 'resque-scheduler', :require => 'resque/scheduler/server'
 
+# gem 'factory_girl'
+
+# gem 'minitest-rails', '~> 3.0'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

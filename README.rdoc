@@ -1,28 +1,52 @@
-== README
+PEOPLE APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+People APP is a basic tool to manage people.
+With People APP you can add people easy and create profiles for each of them, many info can be added, for example:
+First/Last name, birthday, profile picture, job, bio, etc. PeopleApp will send an email to everyone each time a person enters 
+or leaves the system. You can easily edit any person in case is needed, or just remove any person if necessary.
 
-Things you may want to cover:
+This application is a project for Growth Accelaration Partners.
+Delivery Date: 19/01/2017 8pm
 
-* Ruby version
+Technologies used and needed to run this app:
 
-* System dependencies
+* Ruby 2.2
 
-* Configuration
+* Rails 4.2
 
-* Database creation
+* MySql
 
-* Database initialization
+Gems:
 
-* How to run the test suite
+* bootstrap-sass
 
-* Services (job queues, cache servers, search engines, etc.)
+* resque
 
-* Deployment instructions
+* resque_mailer
 
-* ...
+* factory_girl
+
+* minitest-rails
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Instalation:
+
+On the console do
+
+* 'cd' to the location you want to clone the repository
+
+* 'git clone https://github.com/tocirml/PeopleApp' 
+
+* 'bundle install' to install all the gems needed.
+
+* 'rake db:migrate' to update the database
+
+* 'rake db:seed' to fill the db with persons.
+
+* 'rails s' to start the project
+
+On the browser go http://localhost:3000 and start using the app
+
+Mails:
+
+Go http://localhost:3000/rails/mailers/people_app_mailer to have a preview of the emails
