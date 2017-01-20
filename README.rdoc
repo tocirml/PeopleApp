@@ -33,9 +33,7 @@ Instalation:
 
 On the console do
 
-* 'cd' to the location you want to clone the repository
-
-* 'git clone https://github.com/tocirml/PeopleApp' 
+* Go to the location you want to set this app and clone this repository: 'Git clone <url>'
 
 * 'bundle install' to install all the gems needed.
 
